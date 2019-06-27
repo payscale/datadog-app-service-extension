@@ -18,6 +18,6 @@ Go to your app service and click on "Configuration." Add new variables by clicki
 1. **DD_SERVICE_NAME** pointing to the service name you want to appear in Datadog
 
 ### Add the extension
-From the left pane of the app service, select "Extensions." Click on "Add" and select the ".NET Core Datadog APM x86" for an app that is running .Net Core in a non-self-contained application. Accept the license terms and select "OK" to install. Restart the application for this to take effect (and for any of the above environment variable changes to take affect).
+From the left pane of the app service, select "Extensions." Click on "Add" and select the ".NET Core Datadog APM x86" for an app that is running .Net Core in a non-self-contained application. Accept the license terms and select "OK" to install. Restart the application for this to take effect (and for any of the above environment variable changes to take effect).
 
 You probably also need to uninstall any other APM extensions you have installed on the app service.
