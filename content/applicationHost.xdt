@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<configuration xmlns:xdt="http://schemas.microsoft.com/XML-Document-Transform">
+  <system.webServer>
+    <runtime xdt:Transform="InsertIfMissing">
+      <environmentVariables>
+        <add name="CORECLR_ENABLE_PROFILING" xdt:Locator="Match(name)" xdt:Transform="RemoveAll"/>
+        <add name="CORECLR_PROFILER" xdt:Locator="Match(name)" xdt:Transform="RemoveAll"/>
+        <add name="CORECLR_PROFILER_PATH" xdt:Locator="Match(name)" xdt:Transform="RemoveAll"/>
+        <add name="DD_INTEGRATIONS" xdt:Locator="Match(name)" xdt:Transform="RemoveAll"/>
+        <add name="DD_TRACE_AGENT_PORT" xdt:Locator="Match(name)" xdt:Transform="RemoveAll"/>
+        <add name="DD_TRACE_LOG_PATH" xdt:Locator="Match(name)" xdt:Transform="RemoveAll"/>
+
+        <add name="CORECLR_ENABLE_PROFILING" value="1" xdt:Locator="Match(name)" xdt:Transform="Insert"/>
+        <add name="CORECLR_PROFILER" value="{846F5F1C-F9AE-4B07-969E-05C26BC060D8}" xdt:Locator="Match(name)" xdt:Transform="Insert"/>
+        <add name="CORECLR_PROFILER_PATH" value="D:\home\SiteExtensions\Datadog\Datadog.Trace.ClrProfiler.Native.dll" xdt:Locator="Match(name)" xdt:Transform="Insert"/>
+        <add name="DD_INTEGRATIONS" value="D:\home\SiteExtensions\Datadog\integrations.json" xdt:Locator="Match(name)" xdt:Transform="Insert"/>
+        <add name="DD_TRACE_AGENT_PORT" value="8126" xdt:Locator="Match(name)" xdt:Transform="Insert"/>
+        <add name="DD_TRACE_LOG_PATH" value="D:\home\site\diagnostics\dotnet-profiler.log" xdt:Locator="Match(name)" xdt:Transform="Insert"/>
+      </environmentVariables>
+    </runtime>
+  </system.webServer>
+</configuration>
