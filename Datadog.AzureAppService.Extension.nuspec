@@ -6,7 +6,7 @@
     <title>.NET Core Datadog APM x86</title>
     <authors>Robert Glickman</authors>
     <owners>Robert Glickman</owners>
-    <license type="expression">MIT</license>
+    <license type="expression">Apache-2.0</license>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>
       Datadog APM installer for a .Net Core non-self-contained app. Requires a host accessible from the App Service running the Datadog agent. Add Configuration parameters DD_AGENT_HOST, DD_API_KEY, and (optionally) DD_ENV and DD_SERVICE_NAME
