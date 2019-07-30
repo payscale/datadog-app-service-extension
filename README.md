@@ -7,7 +7,7 @@ Repo for installing an App Service Extension for Datadog
 Set up a host running the Datadog agent, like so: https://docs.datadoghq.com/tracing/send_traces/. Grant that host a public IP or otherwise make the host accessible on port 8126 from the Azure app service. Make sure the agent has attribute "apm_non_local_traffic: true" (under apm_config).
 
 ### Add the Datadog nuget package to your application
-Add the same version as is used in this extension (currently 1.3.0). See here: https://www.nuget.org/packages/Datadog.Trace.ClrProfiler.Managed
+Add the same version as is used in this extension (currently 1.6.0). See here: https://www.nuget.org/packages/Datadog.Trace.ClrProfiler.Managed
 
 ### Set the environment variables
 Go to your app service and click on "Configuration." Add new variables by clicking "New application setting" for the following:

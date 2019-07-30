@@ -8,6 +8,10 @@
           "assembly": "System.Data",
           "type": "System.Data.Common.DbCommand",
           "method": "ExecuteDbDataReader",
+          "signature_types": [
+            "System.Data.Common.DbDataReader",
+            "System.Data.CommandBehavior"
+          ],
           "minimum_major": 4,
           "minimum_minor": 0,
           "minimum_patch": 0,
@@ -16,10 +20,10 @@
           "maximum_patch": 65535
         },
         "wrapper": {
-          "assembly": "Datadog.Trace.ClrProfiler.Managed, Version=1.3.0.0, Culture=neutral, PublicKeyToken=def86d061d0d2eeb",
+          "assembly": "Datadog.Trace.ClrProfiler.Managed, Version=1.6.0.0, Culture=neutral, PublicKeyToken=def86d061d0d2eeb",
           "type": "Datadog.Trace.ClrProfiler.Integrations.AdoNetIntegration",
           "method": "ExecuteDbDataReader",
-          "signature": "00 03 1C 1C 08 08"
+          "signature": "00 04 1C 1C 08 08 08"
         }
       },
       {
@@ -28,6 +32,10 @@
           "assembly": "System.Data.Common",
           "type": "System.Data.Common.DbCommand",
           "method": "ExecuteDbDataReader",
+          "signature_types": [
+            "System.Data.Common.DbDataReader",
+            "System.Data.CommandBehavior"
+          ],
           "minimum_major": 4,
           "minimum_minor": 0,
           "minimum_patch": 0,
@@ -36,10 +44,10 @@
           "maximum_patch": 65535
         },
         "wrapper": {
-          "assembly": "Datadog.Trace.ClrProfiler.Managed, Version=1.3.0.0, Culture=neutral, PublicKeyToken=def86d061d0d2eeb",
+          "assembly": "Datadog.Trace.ClrProfiler.Managed, Version=1.6.0.0, Culture=neutral, PublicKeyToken=def86d061d0d2eeb",
           "type": "Datadog.Trace.ClrProfiler.Integrations.AdoNetIntegration",
           "method": "ExecuteDbDataReader",
-          "signature": "00 03 1C 1C 08 08"
+          "signature": "00 04 1C 1C 08 08 08"
         }
       },
       {
@@ -48,6 +56,11 @@
           "assembly": "System.Data",
           "type": "System.Data.Common.DbCommand",
           "method": "ExecuteDbDataReaderAsync",
+          "signature_types": [
+            "System.Threading.Tasks.Task`1<System.Data.Common.DbDataReader>",
+            "System.Data.CommandBehavior",
+            "System.Threading.CancellationToken"
+          ],
           "minimum_major": 4,
           "minimum_minor": 0,
           "minimum_patch": 0,
@@ -56,10 +69,10 @@
           "maximum_patch": 65535
         },
         "wrapper": {
-          "assembly": "Datadog.Trace.ClrProfiler.Managed, Version=1.3.0.0, Culture=neutral, PublicKeyToken=def86d061d0d2eeb",
+          "assembly": "Datadog.Trace.ClrProfiler.Managed, Version=1.6.0.0, Culture=neutral, PublicKeyToken=def86d061d0d2eeb",
           "type": "Datadog.Trace.ClrProfiler.Integrations.AdoNetIntegration",
           "method": "ExecuteDbDataReaderAsync",
-          "signature": "00 04 1C 1C 08 1C 08"
+          "signature": "00 05 1C 1C 08 1C 08 08"
         }
       },
       {
@@ -68,6 +81,11 @@
           "assembly": "System.Data.Common",
           "type": "System.Data.Common.DbCommand",
           "method": "ExecuteDbDataReaderAsync",
+          "signature_types": [
+            "System.Threading.Tasks.Task`1<System.Data.Common.DbDataReader>",
+            "System.Data.CommandBehavior",
+            "System.Threading.CancellationToken"
+          ],
           "minimum_major": 4,
           "minimum_minor": 0,
           "minimum_patch": 0,
@@ -76,10 +94,10 @@
           "maximum_patch": 65535
         },
         "wrapper": {
-          "assembly": "Datadog.Trace.ClrProfiler.Managed, Version=1.3.0.0, Culture=neutral, PublicKeyToken=def86d061d0d2eeb",
+          "assembly": "Datadog.Trace.ClrProfiler.Managed, Version=1.6.0.0, Culture=neutral, PublicKeyToken=def86d061d0d2eeb",
           "type": "Datadog.Trace.ClrProfiler.Integrations.AdoNetIntegration",
           "method": "ExecuteDbDataReaderAsync",
-          "signature": "00 04 1C 1C 08 1C 08"
+          "signature": "00 05 1C 1C 08 1C 08 08"
         }
       }
     ]
@@ -95,6 +113,13 @@
           "assembly": "Microsoft.AspNetCore.Mvc.Core",
           "type": "Microsoft.AspNetCore.Mvc.Internal.MvcCoreDiagnosticSourceExtensions",
           "method": "BeforeAction",
+          "signature_types": [
+            "System.Void",
+            "_",
+            "Microsoft.AspNetCore.Mvc.Abstractions.ActionDescriptor",
+            "Microsoft.AspNetCore.Http.HttpContext",
+            "Microsoft.AspNetCore.Routing.RouteData"
+          ],
           "minimum_major": 2,
           "minimum_minor": 0,
           "minimum_patch": 0,
@@ -103,10 +128,10 @@
           "maximum_patch": 65535
         },
         "wrapper": {
-          "assembly": "Datadog.Trace.ClrProfiler.Managed, Version=1.3.0.0, Culture=neutral, PublicKeyToken=def86d061d0d2eeb",
+          "assembly": "Datadog.Trace.ClrProfiler.Managed, Version=1.6.0.0, Culture=neutral, PublicKeyToken=def86d061d0d2eeb",
           "type": "Datadog.Trace.ClrProfiler.Integrations.AspNetCoreMvc2Integration",
           "method": "BeforeAction",
-          "signature": "00 05 01 1C 1C 1C 1C 08"
+          "signature": "00 06 01 1C 1C 1C 1C 08 08"
         }
       },
       {
@@ -117,6 +142,13 @@
           "assembly": "Microsoft.AspNetCore.Mvc.Core",
           "type": "Microsoft.AspNetCore.Mvc.Internal.MvcCoreDiagnosticSourceExtensions",
           "method": "AfterAction",
+          "signature_types": [
+            "System.Void",
+            "_",
+            "Microsoft.AspNetCore.Mvc.Abstractions.ActionDescriptor",
+            "Microsoft.AspNetCore.Http.HttpContext",
+            "Microsoft.AspNetCore.Routing.RouteData"
+          ],
           "minimum_major": 2,
           "minimum_minor": 0,
           "minimum_patch": 0,
@@ -125,10 +157,10 @@
           "maximum_patch": 65535
         },
         "wrapper": {
-          "assembly": "Datadog.Trace.ClrProfiler.Managed, Version=1.3.0.0, Culture=neutral, PublicKeyToken=def86d061d0d2eeb",
+          "assembly": "Datadog.Trace.ClrProfiler.Managed, Version=1.6.0.0, Culture=neutral, PublicKeyToken=def86d061d0d2eeb",
           "type": "Datadog.Trace.ClrProfiler.Integrations.AspNetCoreMvc2Integration",
           "method": "AfterAction",
-          "signature": "00 05 01 1C 1C 1C 1C 08"
+          "signature": "00 06 01 1C 1C 1C 1C 08 08"
         }
       },
       {
@@ -139,6 +171,10 @@
           "assembly": "Microsoft.AspNetCore.Mvc.Core",
           "type": "Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker",
           "method": "Rethrow",
+          "signature_types": [
+            "System.Void",
+            "_"
+          ],
           "minimum_major": 2,
           "minimum_minor": 0,
           "minimum_patch": 0,
@@ -147,10 +183,10 @@
           "maximum_patch": 65535
         },
         "wrapper": {
-          "assembly": "Datadog.Trace.ClrProfiler.Managed, Version=1.3.0.0, Culture=neutral, PublicKeyToken=def86d061d0d2eeb",
+          "assembly": "Datadog.Trace.ClrProfiler.Managed, Version=1.6.0.0, Culture=neutral, PublicKeyToken=def86d061d0d2eeb",
           "type": "Datadog.Trace.ClrProfiler.Integrations.AspNetCoreMvc2Integration",
           "method": "Rethrow",
-          "signature": "00 02 01 1C 08"
+          "signature": "00 03 01 1C 08 08"
         }
       }
     ]
@@ -166,6 +202,13 @@
           "assembly": "System.Web.Mvc",
           "type": "System.Web.Mvc.Async.IAsyncActionInvoker",
           "method": "BeginInvokeAction",
+          "signature_types": [
+            "System.IAsyncResult",
+            "System.Web.Mvc.ControllerContext",
+            "System.String",
+            "System.AsyncCallback",
+            "System.Object"
+          ],
           "minimum_major": 5,
           "minimum_minor": 1,
           "minimum_patch": 0,
@@ -174,10 +217,10 @@
           "maximum_patch": 65535
         },
         "wrapper": {
-          "assembly": "Datadog.Trace.ClrProfiler.Managed, Version=1.3.0.0, Culture=neutral, PublicKeyToken=def86d061d0d2eeb",
+          "assembly": "Datadog.Trace.ClrProfiler.Managed, Version=1.6.0.0, Culture=neutral, PublicKeyToken=def86d061d0d2eeb",
           "type": "Datadog.Trace.ClrProfiler.Integrations.AspNetMvcIntegration",
           "method": "BeginInvokeAction",
-          "signature": "00 06 1C 1C 1C 1C 1C 1C 08"
+          "signature": "00 07 1C 1C 1C 1C 1C 1C 08 08"
         }
       },
       {
@@ -188,6 +231,10 @@
           "assembly": "System.Web.Mvc",
           "type": "System.Web.Mvc.Async.IAsyncActionInvoker",
           "method": "EndInvokeAction",
+          "signature_types": [
+            "System.Boolean",
+            "System.IAsyncResult"
+          ],
           "minimum_major": 5,
           "minimum_minor": 1,
           "minimum_patch": 0,
@@ -196,10 +243,10 @@
           "maximum_patch": 65535
         },
         "wrapper": {
-          "assembly": "Datadog.Trace.ClrProfiler.Managed, Version=1.3.0.0, Culture=neutral, PublicKeyToken=def86d061d0d2eeb",
+          "assembly": "Datadog.Trace.ClrProfiler.Managed, Version=1.6.0.0, Culture=neutral, PublicKeyToken=def86d061d0d2eeb",
           "type": "Datadog.Trace.ClrProfiler.Integrations.AspNetMvcIntegration",
           "method": "EndInvokeAction",
-          "signature": "00 03 02 1C 1C 08"
+          "signature": "00 04 02 1C 1C 08 08"
         }
       }
     ]
@@ -213,6 +260,11 @@
           "assembly": "System.Web.Http",
           "type": "System.Web.Http.Controllers.IHttpController",
           "method": "ExecuteAsync",
+          "signature_types": [
+            "System.Threading.Tasks.Task`1<System.Net.Http.HttpResponseMessage>",
+            "System.Web.Http.Controllers.HttpControllerContext",
+            "System.Threading.CancellationToken"
+          ],
           "minimum_major": 5,
           "minimum_minor": 2,
           "minimum_patch": 0,
@@ -221,10 +273,10 @@
           "maximum_patch": 65535
         },
         "wrapper": {
-          "assembly": "Datadog.Trace.ClrProfiler.Managed, Version=1.3.0.0, Culture=neutral, PublicKeyToken=def86d061d0d2eeb",
+          "assembly": "Datadog.Trace.ClrProfiler.Managed, Version=1.6.0.0, Culture=neutral, PublicKeyToken=def86d061d0d2eeb",
           "type": "Datadog.Trace.ClrProfiler.Integrations.AspNetWebApi2Integration",
           "method": "ExecuteAsync",
-          "signature": "00 04 1C 1C 1C 1C 08"
+          "signature": "00 05 1C 1C 1C 1C 08 08"
         }
       }
     ]
@@ -240,6 +292,10 @@
           "assembly": "Elasticsearch.Net",
           "type": "Elasticsearch.Net.IRequestPipeline",
           "method": "CallElasticsearch",
+          "signature_types": [
+            "Elasticsearch.Net.ElasticsearchResponse`1<T>",
+            "Elasticsearch.Net.RequestData"
+          ],
           "minimum_major": 5,
           "minimum_minor": 0,
           "minimum_patch": 0,
@@ -248,10 +304,10 @@
           "maximum_patch": 65535
         },
         "wrapper": {
-          "assembly": "Datadog.Trace.ClrProfiler.Managed, Version=1.3.0.0, Culture=neutral, PublicKeyToken=def86d061d0d2eeb",
+          "assembly": "Datadog.Trace.ClrProfiler.Managed, Version=1.6.0.0, Culture=neutral, PublicKeyToken=def86d061d0d2eeb",
           "type": "Datadog.Trace.ClrProfiler.Integrations.ElasticsearchNet5Integration",
           "method": "CallElasticsearch",
-          "signature": "10 01 03 1C 1C 1C 08"
+          "signature": "10 01 04 1C 1C 1C 08 08"
         }
       },
       {
@@ -262,6 +318,11 @@
           "assembly": "Elasticsearch.Net",
           "type": "Elasticsearch.Net.IRequestPipeline",
           "method": "CallElasticsearchAsync",
+          "signature_types": [
+            "System.Threading.Tasks.Task`1<Elasticsearch.Net.ElasticsearchResponse`1<T>>",
+            "Elasticsearch.Net.RequestData",
+            "System.Threading.CancellationToken"
+          ],
           "minimum_major": 5,
           "minimum_minor": 0,
           "minimum_patch": 0,
@@ -270,10 +331,10 @@
           "maximum_patch": 65535
         },
         "wrapper": {
-          "assembly": "Datadog.Trace.ClrProfiler.Managed, Version=1.3.0.0, Culture=neutral, PublicKeyToken=def86d061d0d2eeb",
+          "assembly": "Datadog.Trace.ClrProfiler.Managed, Version=1.6.0.0, Culture=neutral, PublicKeyToken=def86d061d0d2eeb",
           "type": "Datadog.Trace.ClrProfiler.Integrations.ElasticsearchNet5Integration",
           "method": "CallElasticsearchAsync",
-          "signature": "10 01 04 1C 1C 1C 1C 08"
+          "signature": "10 01 05 1C 1C 1C 1C 08 08"
         }
       }
     ]
@@ -289,6 +350,10 @@
           "assembly": "Elasticsearch.Net",
           "type": "Elasticsearch.Net.IRequestPipeline",
           "method": "CallElasticsearch",
+          "signature_types": [
+            "T",
+            "Elasticsearch.Net.RequestData"
+          ],
           "minimum_major": 6,
           "minimum_minor": 0,
           "minimum_patch": 0,
@@ -297,10 +362,10 @@
           "maximum_patch": 65535
         },
         "wrapper": {
-          "assembly": "Datadog.Trace.ClrProfiler.Managed, Version=1.3.0.0, Culture=neutral, PublicKeyToken=def86d061d0d2eeb",
+          "assembly": "Datadog.Trace.ClrProfiler.Managed, Version=1.6.0.0, Culture=neutral, PublicKeyToken=def86d061d0d2eeb",
           "type": "Datadog.Trace.ClrProfiler.Integrations.ElasticsearchNet6Integration",
           "method": "CallElasticsearch",
-          "signature": "10 01 03 1C 1C 1C 08"
+          "signature": "10 01 04 1C 1C 1C 08 08"
         }
       },
       {
@@ -311,6 +376,11 @@
           "assembly": "Elasticsearch.Net",
           "type": "Elasticsearch.Net.IRequestPipeline",
           "method": "CallElasticsearchAsync",
+          "signature_types": [
+            "System.Threading.Tasks.Task`1<T>",
+            "Elasticsearch.Net.RequestData",
+            "System.Threading.CancellationToken"
+          ],
           "minimum_major": 6,
           "minimum_minor": 0,
           "minimum_patch": 0,
@@ -319,10 +389,68 @@
           "maximum_patch": 65535
         },
         "wrapper": {
-          "assembly": "Datadog.Trace.ClrProfiler.Managed, Version=1.3.0.0, Culture=neutral, PublicKeyToken=def86d061d0d2eeb",
+          "assembly": "Datadog.Trace.ClrProfiler.Managed, Version=1.6.0.0, Culture=neutral, PublicKeyToken=def86d061d0d2eeb",
           "type": "Datadog.Trace.ClrProfiler.Integrations.ElasticsearchNet6Integration",
           "method": "CallElasticsearchAsync",
-          "signature": "10 01 04 1C 1C 1C 1C 08"
+          "signature": "10 01 05 1C 1C 1C 1C 08 08"
+        }
+      }
+    ]
+  },
+  {
+    "name": "GraphQL",
+    "method_replacements": [
+      {
+        "caller": {},
+        "target": {
+          "assembly": "GraphQL",
+          "type": "GraphQL.Validation.IDocumentValidator",
+          "method": "Validate",
+          "signature_types": [
+            "GraphQL.Validation.IValidationResult",
+            "System.String",
+            "GraphQL.Types.ISchema",
+            "GraphQL.Language.AST.Document",
+            "System.Collections.Generic.IEnumerable`1<GraphQL.Validation.IValidationRule>",
+            "_",
+            "GraphQL.Inputs"
+          ],
+          "minimum_major": 2,
+          "minimum_minor": 3,
+          "minimum_patch": 0,
+          "maximum_major": 2,
+          "maximum_minor": 65535,
+          "maximum_patch": 65535
+        },
+        "wrapper": {
+          "assembly": "Datadog.Trace.ClrProfiler.Managed, Version=1.6.0.0, Culture=neutral, PublicKeyToken=def86d061d0d2eeb",
+          "type": "Datadog.Trace.ClrProfiler.Integrations.GraphQLIntegration",
+          "method": "Validate",
+          "signature": "00 09 1C 1C 1C 1C 1C 1C 1C 1C 08 08"
+        }
+      },
+      {
+        "caller": {},
+        "target": {
+          "assembly": "GraphQL",
+          "type": "GraphQL.Execution.IExecutionStrategy",
+          "method": "ExecuteAsync",
+          "signature_types": [
+            "System.Threading.Tasks.Task`1<GraphQL.ExecutionResult>",
+            "GraphQL.Execution.ExecutionContext"
+          ],
+          "minimum_major": 2,
+          "minimum_minor": 3,
+          "minimum_patch": 0,
+          "maximum_major": 2,
+          "maximum_minor": 65535,
+          "maximum_patch": 65535
+        },
+        "wrapper": {
+          "assembly": "Datadog.Trace.ClrProfiler.Managed, Version=1.6.0.0, Culture=neutral, PublicKeyToken=def86d061d0d2eeb",
+          "type": "Datadog.Trace.ClrProfiler.Integrations.GraphQLIntegration",
+          "method": "ExecuteAsync",
+          "signature": "00 04 1C 1C 1C 08 08"
         }
       }
     ]
@@ -336,6 +464,11 @@
           "assembly": "System.Net.Http",
           "type": "System.Net.Http.HttpMessageHandler",
           "method": "SendAsync",
+          "signature_types": [
+            "System.Threading.Tasks.Task`1<System.Net.Http.HttpResponseMessage>",
+            "System.Net.Http.HttpRequestMessage",
+            "System.Threading.CancellationToken"
+          ],
           "minimum_major": 4,
           "minimum_minor": 0,
           "minimum_patch": 0,
@@ -344,10 +477,10 @@
           "maximum_patch": 65535
         },
         "wrapper": {
-          "assembly": "Datadog.Trace.ClrProfiler.Managed, Version=1.3.0.0, Culture=neutral, PublicKeyToken=def86d061d0d2eeb",
+          "assembly": "Datadog.Trace.ClrProfiler.Managed, Version=1.6.0.0, Culture=neutral, PublicKeyToken=def86d061d0d2eeb",
           "type": "Datadog.Trace.ClrProfiler.Integrations.HttpMessageHandlerIntegration",
           "method": "HttpMessageHandler_SendAsync",
-          "signature": "00 04 1C 1C 1C 1C 08"
+          "signature": "00 05 1C 1C 1C 1C 08 08"
         }
       },
       {
@@ -356,6 +489,11 @@
           "assembly": "System.Net.Http",
           "type": "System.Net.Http.HttpClientHandler",
           "method": "SendAsync",
+          "signature_types": [
+            "System.Threading.Tasks.Task`1<System.Net.Http.HttpResponseMessage>",
+            "System.Net.Http.HttpRequestMessage",
+            "System.Threading.CancellationToken"
+          ],
           "minimum_major": 4,
           "minimum_minor": 0,
           "minimum_patch": 0,
@@ -364,10 +502,10 @@
           "maximum_patch": 65535
         },
         "wrapper": {
-          "assembly": "Datadog.Trace.ClrProfiler.Managed, Version=1.3.0.0, Culture=neutral, PublicKeyToken=def86d061d0d2eeb",
+          "assembly": "Datadog.Trace.ClrProfiler.Managed, Version=1.6.0.0, Culture=neutral, PublicKeyToken=def86d061d0d2eeb",
           "type": "Datadog.Trace.ClrProfiler.Integrations.HttpMessageHandlerIntegration",
           "method": "HttpClientHandler_SendAsync",
-          "signature": "00 04 1C 1C 1C 1C 08"
+          "signature": "00 05 1C 1C 1C 1C 08 08"
         }
       }
     ]
@@ -381,6 +519,11 @@
           "assembly": "MongoDB.Driver.Core",
           "type": "MongoDB.Driver.Core.WireProtocol.IWireProtocol",
           "method": "Execute",
+          "signature_types": [
+            "System.Void",
+            "MongoDB.Driver.Core.Connections.IConnection",
+            "System.Threading.CancellationToken"
+          ],
           "minimum_major": 2,
           "minimum_minor": 2,
           "minimum_patch": 0,
@@ -389,10 +532,10 @@
           "maximum_patch": 65535
         },
         "wrapper": {
-          "assembly": "Datadog.Trace.ClrProfiler.Managed, Version=1.3.0.0, Culture=neutral, PublicKeyToken=def86d061d0d2eeb",
+          "assembly": "Datadog.Trace.ClrProfiler.Managed, Version=1.6.0.0, Culture=neutral, PublicKeyToken=def86d061d0d2eeb",
           "type": "Datadog.Trace.ClrProfiler.Integrations.MongoDbIntegration",
           "method": "Execute",
-          "signature": "00 04 1C 1C 1C 1C 08"
+          "signature": "00 05 1C 1C 1C 1C 08 08"
         }
       },
       {
@@ -401,6 +544,11 @@
           "assembly": "MongoDB.Driver.Core",
           "type": "MongoDB.Driver.Core.WireProtocol.IWireProtocol`1",
           "method": "Execute",
+          "signature_types": [
+            "T",
+            "MongoDB.Driver.Core.Connections.IConnection",
+            "System.Threading.CancellationToken"
+          ],
           "minimum_major": 2,
           "minimum_minor": 2,
           "minimum_patch": 0,
@@ -409,10 +557,10 @@
           "maximum_patch": 65535
         },
         "wrapper": {
-          "assembly": "Datadog.Trace.ClrProfiler.Managed, Version=1.3.0.0, Culture=neutral, PublicKeyToken=def86d061d0d2eeb",
+          "assembly": "Datadog.Trace.ClrProfiler.Managed, Version=1.6.0.0, Culture=neutral, PublicKeyToken=def86d061d0d2eeb",
           "type": "Datadog.Trace.ClrProfiler.Integrations.MongoDbIntegration",
-          "method": "Execute",
-          "signature": "00 04 1C 1C 1C 1C 08"
+          "method": "ExecuteGeneric",
+          "signature": "00 05 1C 1C 1C 1C 08 08"
         }
       },
       {
@@ -421,6 +569,11 @@
           "assembly": "MongoDB.Driver.Core",
           "type": "MongoDB.Driver.Core.WireProtocol.IWireProtocol",
           "method": "ExecuteAsync",
+          "signature_types": [
+            "System.Threading.Tasks.Task",
+            "MongoDB.Driver.Core.Connections.IConnection",
+            "System.Threading.CancellationToken"
+          ],
           "minimum_major": 2,
           "minimum_minor": 1,
           "minimum_patch": 0,
@@ -429,10 +582,10 @@
           "maximum_patch": 65535
         },
         "wrapper": {
-          "assembly": "Datadog.Trace.ClrProfiler.Managed, Version=1.3.0.0, Culture=neutral, PublicKeyToken=def86d061d0d2eeb",
+          "assembly": "Datadog.Trace.ClrProfiler.Managed, Version=1.6.0.0, Culture=neutral, PublicKeyToken=def86d061d0d2eeb",
           "type": "Datadog.Trace.ClrProfiler.Integrations.MongoDbIntegration",
           "method": "ExecuteAsync",
-          "signature": "00 04 1C 1C 1C 1C 08"
+          "signature": "00 05 1C 1C 1C 1C 08 08"
         }
       },
       {
@@ -441,6 +594,11 @@
           "assembly": "MongoDB.Driver.Core",
           "type": "MongoDB.Driver.Core.WireProtocol.IWireProtocol`1",
           "method": "ExecuteAsync",
+          "signature_types": [
+            "System.Threading.Tasks.Task`1<T>",
+            "MongoDB.Driver.Core.Connections.IConnection",
+            "System.Threading.CancellationToken"
+          ],
           "minimum_major": 2,
           "minimum_minor": 1,
           "minimum_patch": 0,
@@ -449,10 +607,10 @@
           "maximum_patch": 65535
         },
         "wrapper": {
-          "assembly": "Datadog.Trace.ClrProfiler.Managed, Version=1.3.0.0, Culture=neutral, PublicKeyToken=def86d061d0d2eeb",
+          "assembly": "Datadog.Trace.ClrProfiler.Managed, Version=1.6.0.0, Culture=neutral, PublicKeyToken=def86d061d0d2eeb",
           "type": "Datadog.Trace.ClrProfiler.Integrations.MongoDbIntegration",
           "method": "ExecuteAsyncGeneric",
-          "signature": "00 04 1C 1C 1C 1C 08"
+          "signature": "00 05 1C 1C 1C 1C 08 08"
         }
       }
     ]
@@ -468,6 +626,13 @@
           "assembly": "ServiceStack.Redis",
           "type": "ServiceStack.Redis.RedisNativeClient",
           "method": "SendReceive",
+          "signature_types": [
+            "T",
+            "System.Byte[][]",
+            "System.Func`1<T>",
+            "System.Action`1<System.Func`1<T>>",
+            "System.Boolean"
+          ],
           "minimum_major": 4,
           "minimum_minor": 0,
           "minimum_patch": 0,
@@ -476,10 +641,10 @@
           "maximum_patch": 65535
         },
         "wrapper": {
-          "assembly": "Datadog.Trace.ClrProfiler.Managed, Version=1.3.0.0, Culture=neutral, PublicKeyToken=def86d061d0d2eeb",
+          "assembly": "Datadog.Trace.ClrProfiler.Managed, Version=1.6.0.0, Culture=neutral, PublicKeyToken=def86d061d0d2eeb",
           "type": "Datadog.Trace.ClrProfiler.Integrations.ServiceStackRedisIntegration",
           "method": "SendReceive",
-          "signature": "10 01 06 1E 00 1C 1D 1D 05 1C 1C 02 08"
+          "signature": "10 01 07 1E 00 1C 1D 1D 05 1C 1C 02 08 08"
         }
       }
     ]
@@ -495,6 +660,12 @@
           "assembly": "StackExchange.Redis",
           "type": "StackExchange.Redis.ConnectionMultiplexer",
           "method": "ExecuteSyncImpl",
+          "signature_types": [
+            "T",
+            "StackExchange.Redis.Message",
+            "StackExchange.Redis.ResultProcessor`1<T>",
+            "StackExchange.Redis.ServerEndPoint"
+          ],
           "minimum_major": 1,
           "minimum_minor": 0,
           "minimum_patch": 0,
@@ -503,10 +674,10 @@
           "maximum_patch": 65535
         },
         "wrapper": {
-          "assembly": "Datadog.Trace.ClrProfiler.Managed, Version=1.3.0.0, Culture=neutral, PublicKeyToken=def86d061d0d2eeb",
+          "assembly": "Datadog.Trace.ClrProfiler.Managed, Version=1.6.0.0, Culture=neutral, PublicKeyToken=def86d061d0d2eeb",
           "type": "Datadog.Trace.ClrProfiler.Integrations.StackExchange.Redis.ConnectionMultiplexer",
           "method": "ExecuteSyncImpl",
-          "signature": "10 01 05 1E 00 1C 1C 1C 1C 08"
+          "signature": "10 01 06 1E 00 1C 1C 1C 1C 08 08"
         }
       },
       {
@@ -517,6 +688,12 @@
           "assembly": "StackExchange.Redis.StrongName",
           "type": "StackExchange.Redis.ConnectionMultiplexer",
           "method": "ExecuteSyncImpl",
+          "signature_types": [
+            "T",
+            "StackExchange.Redis.Message",
+            "StackExchange.Redis.ResultProcessor`1<T>",
+            "StackExchange.Redis.ServerEndPoint"
+          ],
           "minimum_major": 1,
           "minimum_minor": 0,
           "minimum_patch": 0,
@@ -525,10 +702,10 @@
           "maximum_patch": 65535
         },
         "wrapper": {
-          "assembly": "Datadog.Trace.ClrProfiler.Managed, Version=1.3.0.0, Culture=neutral, PublicKeyToken=def86d061d0d2eeb",
+          "assembly": "Datadog.Trace.ClrProfiler.Managed, Version=1.6.0.0, Culture=neutral, PublicKeyToken=def86d061d0d2eeb",
           "type": "Datadog.Trace.ClrProfiler.Integrations.StackExchange.Redis.ConnectionMultiplexer",
           "method": "ExecuteSyncImpl",
-          "signature": "10 01 05 1E 00 1C 1C 1C 1C 08"
+          "signature": "10 01 06 1E 00 1C 1C 1C 1C 08 08"
         }
       },
       {
@@ -539,6 +716,13 @@
           "assembly": "StackExchange.Redis",
           "type": "StackExchange.Redis.ConnectionMultiplexer",
           "method": "ExecuteAsyncImpl",
+          "signature_types": [
+            "System.Threading.Tasks.Task`1<T>",
+            "StackExchange.Redis.Message",
+            "StackExchange.Redis.ResultProcessor`1<T>",
+            "System.Object",
+            "StackExchange.Redis.ServerEndPoint"
+          ],
           "minimum_major": 1,
           "minimum_minor": 0,
           "minimum_patch": 0,
@@ -547,10 +731,10 @@
           "maximum_patch": 65535
         },
         "wrapper": {
-          "assembly": "Datadog.Trace.ClrProfiler.Managed, Version=1.3.0.0, Culture=neutral, PublicKeyToken=def86d061d0d2eeb",
+          "assembly": "Datadog.Trace.ClrProfiler.Managed, Version=1.6.0.0, Culture=neutral, PublicKeyToken=def86d061d0d2eeb",
           "type": "Datadog.Trace.ClrProfiler.Integrations.StackExchange.Redis.ConnectionMultiplexer",
           "method": "ExecuteAsyncImpl",
-          "signature": "10 01 06 1C 1C 1C 1C 1C 1C 08"
+          "signature": "10 01 07 1C 1C 1C 1C 1C 1C 08 08"
         }
       },
       {
@@ -561,6 +745,13 @@
           "assembly": "StackExchange.Redis.StrongName",
           "type": "StackExchange.Redis.ConnectionMultiplexer",
           "method": "ExecuteAsyncImpl",
+          "signature_types": [
+            "System.Threading.Tasks.Task`1<T>",
+            "StackExchange.Redis.Message",
+            "StackExchange.Redis.ResultProcessor`1<T>",
+            "System.Object",
+            "StackExchange.Redis.ServerEndPoint"
+          ],
           "minimum_major": 1,
           "minimum_minor": 0,
           "minimum_patch": 0,
@@ -569,10 +760,10 @@
           "maximum_patch": 65535
         },
         "wrapper": {
-          "assembly": "Datadog.Trace.ClrProfiler.Managed, Version=1.3.0.0, Culture=neutral, PublicKeyToken=def86d061d0d2eeb",
+          "assembly": "Datadog.Trace.ClrProfiler.Managed, Version=1.6.0.0, Culture=neutral, PublicKeyToken=def86d061d0d2eeb",
           "type": "Datadog.Trace.ClrProfiler.Integrations.StackExchange.Redis.ConnectionMultiplexer",
           "method": "ExecuteAsyncImpl",
-          "signature": "10 01 06 1C 1C 1C 1C 1C 1C 08"
+          "signature": "10 01 07 1C 1C 1C 1C 1C 1C 08 08"
         }
       },
       {
@@ -583,18 +774,24 @@
           "assembly": "StackExchange.Redis",
           "type": "StackExchange.Redis.RedisBase",
           "method": "ExecuteAsync",
+          "signature_types": [
+            "System.Threading.Tasks.Task`1<T>",
+            "StackExchange.Redis.Message",
+            "StackExchange.Redis.ResultProcessor`1<T>",
+            "StackExchange.Redis.ServerEndPoint"
+          ],
           "minimum_major": 1,
           "minimum_minor": 0,
           "minimum_patch": 0,
-          "maximum_major": 1,
+          "maximum_major": 2,
           "maximum_minor": 65535,
           "maximum_patch": 65535
         },
         "wrapper": {
-          "assembly": "Datadog.Trace.ClrProfiler.Managed, Version=1.3.0.0, Culture=neutral, PublicKeyToken=def86d061d0d2eeb",
+          "assembly": "Datadog.Trace.ClrProfiler.Managed, Version=1.6.0.0, Culture=neutral, PublicKeyToken=def86d061d0d2eeb",
           "type": "Datadog.Trace.ClrProfiler.Integrations.StackExchange.Redis.RedisBatch",
           "method": "ExecuteAsync",
-          "signature": "10 01 05 1C 1C 1C 1C 1C 08"
+          "signature": "10 01 06 1C 1C 1C 1C 1C 08 08"
         }
       },
       {
@@ -605,18 +802,24 @@
           "assembly": "StackExchange.Redis.StrongName",
           "type": "StackExchange.Redis.RedisBase",
           "method": "ExecuteAsync",
+          "signature_types": [
+            "System.Threading.Tasks.Task`1<T>",
+            "StackExchange.Redis.Message",
+            "StackExchange.Redis.ResultProcessor`1<T>",
+            "StackExchange.Redis.ServerEndPoint"
+          ],
           "minimum_major": 1,
           "minimum_minor": 0,
           "minimum_patch": 0,
-          "maximum_major": 1,
+          "maximum_major": 2,
           "maximum_minor": 65535,
           "maximum_patch": 65535
         },
         "wrapper": {
-          "assembly": "Datadog.Trace.ClrProfiler.Managed, Version=1.3.0.0, Culture=neutral, PublicKeyToken=def86d061d0d2eeb",
+          "assembly": "Datadog.Trace.ClrProfiler.Managed, Version=1.6.0.0, Culture=neutral, PublicKeyToken=def86d061d0d2eeb",
           "type": "Datadog.Trace.ClrProfiler.Integrations.StackExchange.Redis.RedisBatch",
           "method": "ExecuteAsync",
-          "signature": "10 01 05 1C 1C 1C 1C 1C 08"
+          "signature": "10 01 06 1C 1C 1C 1C 1C 08 08"
         }
       }
     ]
@@ -630,6 +833,11 @@
           "assembly": "System.ServiceModel",
           "type": "System.ServiceModel.Dispatcher.ChannelHandler",
           "method": "HandleRequest",
+          "signature_types": [
+            "System.Boolean",
+            "System.ServiceModel.Channels.RequestContext",
+            "System.ServiceModel.OperationContext"
+          ],
           "minimum_major": 4,
           "minimum_minor": 0,
           "minimum_patch": 0,
@@ -638,10 +846,10 @@
           "maximum_patch": 65535
         },
         "wrapper": {
-          "assembly": "Datadog.Trace.ClrProfiler.Managed, Version=1.3.0.0, Culture=neutral, PublicKeyToken=def86d061d0d2eeb",
+          "assembly": "Datadog.Trace.ClrProfiler.Managed, Version=1.6.0.0, Culture=neutral, PublicKeyToken=def86d061d0d2eeb",
           "type": "Datadog.Trace.ClrProfiler.Integrations.WcfIntegration",
           "method": "HandleRequest",
-          "signature": "00 04 02 1C 1C 1C 08"
+          "signature": "00 05 02 1C 1C 1C 08 08"
         }
       }
     ]
@@ -655,6 +863,9 @@
           "assembly": "System",
           "type": "System.Net.WebRequest",
           "method": "GetResponse",
+          "signature_types": [
+            "System.Net.WebResponse"
+          ],
           "minimum_major": 4,
           "minimum_minor": 0,
           "minimum_patch": 0,
@@ -663,10 +874,10 @@
           "maximum_patch": 65535
         },
         "wrapper": {
-          "assembly": "Datadog.Trace.ClrProfiler.Managed, Version=1.3.0.0, Culture=neutral, PublicKeyToken=def86d061d0d2eeb",
+          "assembly": "Datadog.Trace.ClrProfiler.Managed, Version=1.6.0.0, Culture=neutral, PublicKeyToken=def86d061d0d2eeb",
           "type": "Datadog.Trace.ClrProfiler.Integrations.WebRequestIntegration",
           "method": "GetResponse",
-          "signature": "00 02 1C 1C 08"
+          "signature": "00 03 1C 1C 08 08"
         }
       },
       {
@@ -675,6 +886,9 @@
           "assembly": "System.Net.Requests",
           "type": "System.Net.WebRequest",
           "method": "GetResponse",
+          "signature_types": [
+            "System.Net.WebResponse"
+          ],
           "minimum_major": 4,
           "minimum_minor": 0,
           "minimum_patch": 0,
@@ -683,10 +897,10 @@
           "maximum_patch": 65535
         },
         "wrapper": {
-          "assembly": "Datadog.Trace.ClrProfiler.Managed, Version=1.3.0.0, Culture=neutral, PublicKeyToken=def86d061d0d2eeb",
+          "assembly": "Datadog.Trace.ClrProfiler.Managed, Version=1.6.0.0, Culture=neutral, PublicKeyToken=def86d061d0d2eeb",
           "type": "Datadog.Trace.ClrProfiler.Integrations.WebRequestIntegration",
           "method": "GetResponse",
-          "signature": "00 02 1C 1C 08"
+          "signature": "00 03 1C 1C 08 08"
         }
       },
       {
@@ -695,6 +909,9 @@
           "assembly": "System.Net",
           "type": "System.Net.WebRequest",
           "method": "GetResponseAsync",
+          "signature_types": [
+            "System.Threading.Tasks.Task`1<System.Net.WebResponse>"
+          ],
           "minimum_major": 4,
           "minimum_minor": 0,
           "minimum_patch": 0,
@@ -703,10 +920,10 @@
           "maximum_patch": 65535
         },
         "wrapper": {
-          "assembly": "Datadog.Trace.ClrProfiler.Managed, Version=1.3.0.0, Culture=neutral, PublicKeyToken=def86d061d0d2eeb",
+          "assembly": "Datadog.Trace.ClrProfiler.Managed, Version=1.6.0.0, Culture=neutral, PublicKeyToken=def86d061d0d2eeb",
           "type": "Datadog.Trace.ClrProfiler.Integrations.WebRequestIntegration",
           "method": "GetResponseAsync",
-          "signature": "00 02 1C 1C 08"
+          "signature": "00 03 1C 1C 08 08"
         }
       }
     ]
